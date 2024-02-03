@@ -55,7 +55,7 @@ int main(int argc, char *argv[]){
   
   printf("  Conversor de Temperatura v1.0\n\n");
   printf("  Autor: Ailson Guedes\n\n");
-  printf("  Você pode utilizar o valor 0 e o argumento -h ou --help para acessar o menu de ajuda.\n");
+  printf("  Você pode utilizar o valor 0 e o argumento -h ou --help para acessar o menu de ajuda.\n\n");
 
   printf(">>>>convshell: ");
   scanf("%f %s", &val, &arg);
