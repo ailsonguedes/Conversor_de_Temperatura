@@ -14,7 +14,6 @@ void CelsiusConv(float val){
 
   printf("Temperatura em fahrenheit: %.2f ºF\n", result_fahrenheit);
   printf("Temperatura em Kelvin: %.2f K\n", result_kelvin);
-
 }
 
 void FahrenheitConv(float val){
@@ -74,7 +73,6 @@ int main(int argc, char *argv[]){
   }
 
   switch ( argC ){
-
     case 1:
       CelsiusConv(val);
     break;
