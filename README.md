@@ -19,7 +19,8 @@
 - O projeto pode ser executado normalmente em um ambiente Linux.
 - Também pode ser recompilado para que funcione em ambientes Windows.
 
-1. Compilando o projeto  
+1. Compilando o projeto
+
   ```shell
     gcc - o nomedoprojeto nomedoprojeto.c
   ```
@@ -35,15 +36,15 @@
 - Execute com o comando abaixo.
 
   ```shell
-    ./nomedoprojeto
+    ./nomedoprojeto [argumento] [valor]
   ```
 ## ⚙️ Forma de Uso:
 
-- O usuário deve executar o programa e entrar com uma sequência de valor e argumento:
-    - Exemplo: 0 -h
+- O usuário deve executar o programa e entrar com uma sequência de argumento e valor:
+    - Exemplo: -h 0
 
 ###### Aqui está uma lista com os possíveis argumentos:
-      
+
       Unidade:
       '-c' ou '--celsius':    Converte de Celsius para Fahrenheit e Kelvin
       '-f' ou '--fahrenheit': Converte de Fahrenheit para Celsius e Kelvin
