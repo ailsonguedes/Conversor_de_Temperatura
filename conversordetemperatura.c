@@ -2,53 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "./src/h_files/celsius_conv.h"
+#include "./src/h_files/fahrenheit_conv.h"
+#include "./src/h_files/help_func.h"
+#include "./src/h_files/kelvin_conv.h"
+
 float val;
 int argC;
-
-void CelsiusConv(float val) {
-    float result_fahrenheit;
-    float result_kelvin;
-
-    result_fahrenheit = (val * 9) / 5 + 32;
-    result_kelvin = val + 273.15;
-
-    printf("Temperatura em fahrenheit: %.2f ºF\n", result_fahrenheit);
-    printf("Temperatura em Kelvin: %.2f K\n", result_kelvin);
-}
-
-void FahrenheitConv(float val) {
-    float result_celsius;
-    float result_kelvin;
-
-    result_celsius = (val - 32) * 5 / 9;
-    result_kelvin = (val + 459.67) * 5 / 9;
-
-    printf("Temperatura em celsius: %.2f C\n", result_celsius);
-    printf("Temperatura em kelvin: %.2f K\n", result_kelvin);
-}
-
-void KelvinConv(float val) {
-    float result_celsius;
-    float result_fahrenheit;
-
-    result_celsius = val - 273.15;
-    result_fahrenheit = val * 9 / 5 - 459.67;
-
-    printf("Temperatura em celsius: %.2f C\n", result_celsius);
-    printf("Temperatura em fahrenheit: %.2f ºF\n", result_fahrenheit);
-}
-
-void help() {
-    printf("Conversor de Temperatura\n");
-    printf("---------------------------\n");
-    printf("Uso: [argumento] [temperatura]\n\n");
-
-    printf("Argumentos:\n");
-    printf("  -c || --celsius\t\tConverte de Celsius para Fahrenheit e Kelvin\n");
-    printf("  -f || --fahrenheit\t\tConverte de Fahrenheit para Celsius e Kelvin\n");
-    printf("  -k || --kelvin\t\tConverte de Kelvin para Celsius e Fahrenheit\n");
-    printf("  -h || --help\t\t\tMostra a tela de ajuda\n\n");
-}
 
 int main(int argc, char *argv[]) {
     printf("  Conversor de Temperatura v1.0\n\n");
